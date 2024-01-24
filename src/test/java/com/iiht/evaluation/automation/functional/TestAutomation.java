@@ -171,7 +171,7 @@ public class TestAutomation extends App {
         boolean testcase_status = true;
         String month_unemployed = MasterData.test_emergency_fund_calculator_master_data.get("month_unemployed");
         try {
-            boolean emergency_fund_calculator_enter_month_unemployed_succeed = Activities.emergency_fund_calculator_enter_month_unemployed(driver, month_unemployed);
+            boolean emergency_fund_calculator_enter_month_unemployed_succeed = Activities.emergency_fund_calculator_enter_month_unemployed(driver, Integer.parseInt(month_unemployed));
             System.out.println("emergency_fund_calculator_enter_month_unemployed_succeed " + emergency_fund_calculator_enter_month_unemployed_succeed);
             if (!emergency_fund_calculator_enter_month_unemployed_succeed) {
                 testcase_status = false;
